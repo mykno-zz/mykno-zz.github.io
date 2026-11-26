@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>欧洲一级亚洲二级在线观_欧洲足球联赛直播_亚洲杯赛事回放</title>
+<meta name="description" content="欧洲一级亚洲二级在线观为球迷提供欧洲五大联赛直播、亚洲二级联赛赛程与赛事回放，含球队对阵看点、积分榜变化和观赛指南，适合周末与深夜看球的球迷。">
+<meta name="keywords" content="欧洲五大联赛直播,亚洲杯赛程,足球赛事回放,联赛积分榜,球队对阵分析">
+<style>
+:root{
+  --ink:#0f1b2b;
+  --ink-2:#22344a;
+  --muted:#5d6f83;
+  --line:#dfe6ee;
+  --bg:#f4f7fb;
+  --panel:#ffffff;
+  --brand:#0b6b4f;
+  --brand-2:#128a66;
+  --brand-soft:#e3f4ee;
+  --accent:#c2410c;
+  --accent-soft:#fdf0e8;
+  --gold:#a5781b;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(15,27,43,.06),0 8px 24px rgba(15,27,43,.06);
+  --shadow-sm:0 1px 2px rgba(15,27,43,.08);
+  --ann-h:40px;
+  --head-h:66px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;
+  line-height:1.75;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brand-2);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶 ===== */
+.ann{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(90deg,#0b6b4f,#128a66 55%,#0b6b4f);
+  color:#eafaf3;font-size:13px;
+  height:var(--ann-h);display:flex;align-items:center;
+}
+.ann .wrap{display:flex;align-items:center;gap:12px;width:100%;overflow:hidden}
+.ann b{color:#fff;font-weight:600;white-space:nowrap}
+.ann .dot{width:7px;height:7px;border-radius:50%;background:#8ff0c8;flex:none;box-shadow:0 0 0 3px rgba(143,240,200,.22)}
+.ann .ticker{display:flex;gap:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ann a{color:#d6fbec;border-bottom:1px dashed rgba(214,251,236,.4)}
+.ann a:hover{color:#fff}
+
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head .wrap{height:var(--head-h);display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text strong{font-size:17px;letter-spacing:.5px;color:var(--ink)}
+.brand-text span{font-size:10.5px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.nav{display:flex;gap:4px;margin-left:8px;flex:1;flex-wrap:wrap}
+.nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 10px;border-radius:8px;white-space:nowrap;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none}
+.search{display:flex;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px;gap:6px}
+.search input{border:0;background:transparent;outline:none;width:150px;font-size:13.5px;color:var(--ink);padding:4px 0}
+.search input::placeholder{color:#9aa9b8}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:5px 12px;font-size:13px}
+.search button:hover{background:var(--brand-2)}
+.btn-ghost{border:1px solid var(--line);background:#fff;color:var(--ink-2);border-radius:999px;padding:7px 14px;font-size:13.5px}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:9px;padding:7px 10px;font-size:13px;color:var(--ink-2)}
+
+.wrap{max-width:1320px;margin:0 auto;padding:0 22px}
+
+/* ===== 首屏 ===== */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 420px at 82% -10%,rgba(18,138,102,.16),transparent 62%),
+  radial-gradient(760px 340px at 8% 110%,rgba(194,65,12,.10),transparent 60%),
+  #0c1c2a;color:#e9f2f7;}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:44px 44px;mask-image:linear-gradient(180deg,rgba(0,0,0,.85),transparent 78%);
+}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:38px;padding-top:46px;padding-bottom:46px;align-items:center}
+.tagpill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(143,240,200,.4);background:rgba(143,240,200,.12);color:#b7f5dc;border-radius:999px;padding:5px 13px;font-size:12.5px;letter-spacing:.4px}
+.hero h1{font-size:clamp(26px,3.4vw,40px);letter-spacing:1px;margin:16px 0 0;color:#fff}
+.hero .lead{margin-top:14px;color:#c4d5e2;font-size:15.5px;max-width:36em;line-height:1.85}
+.hero .lead b{color:#8ff0c8;font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn-primary{background:linear-gradient(135deg,#12a276,#0b6b4f);color:#fff;border:0;border-radius:10px;padding:11px 22px;font-size:14.5px;font-weight:600;box-shadow:0 8px 20px rgba(18,162,118,.28)}
+.btn-primary:hover{filter:brightness(1.07)}
+.btn-line{border:1px solid rgba(255,255,255,.28);color:#e9f2f7;background:rgba(255,255,255,.05);border-radius:10px;padding:11px 20px;font-size:14.5px}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.hero-stats{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.hero-stats div strong{display:block;font-size:22px;color:#fff;letter-spacing:.5px}
+.hero-stats div span{font-size:12.5px;color:#9db4c6}
+
+/* 首屏视觉：赛程板 */
+.board{
+  background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04));
+  border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px;
+  box-shadow:0 24px 50px rgba(0,0,0,.32);
+  backdrop-filter:blur(4px);
+}
+.board-top{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#9db4c6;margin-bottom:12px}
+.board-top b{color:#8ff0c8;letter-spacing:1px;font-size:12.5px}
+.match{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:9px 0;border-top:1px dashed rgba(255,255,255,.12)}
+.match:first-of-type{border-top:0}
+.match .team{font-size:13.5px;color:#e3eef6;line-height:1.3}
+.match .team.r{text-align:right}
+.match .score{font-variant-numeric:tabular-nums;font-weight:700;color:#fff;background:rgba(255,255,255,.10);border-radius:7px;padding:2px 9px;font-size:12.5px;white-space:nowrap}
+.match .meta{grid-column:1/-1;font-size:11px;color:#7f97ab;margin-top:2px}
+.board-foot{margin-top:12px;display:flex;justify-content:space-between;font-size:11.5px;color:#8ba4b8;border-top:1px solid rgba(255,255,255,.10);padding-top:10px}
+
+/* ===== 布局：三栏门户 ===== */
+.layout{
+  display:grid;grid-template-columns:176px minmax(0,1fr) 260px;gap:26px;
+  padding:28px 0 10px;align-items:start;
+}
+.col-left{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px)}
+.col-right{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.panel-pad{padding:16px}
+.side-title{font-size:12px;letter-spacing:2px;color:var(--muted);margin-bottom:10px;font-weight:600}
+.chan-list a{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:7px 9px;border-radius:8px;font-size:13.5px;color:var(--ink-2)}
+.chan-list a:hover{background:var(--brand-soft);color:var(--brand)}
+.chan-list a span{font-size:11px;color:#93a4b5;font-variant-numeric:tabular-nums}
+.chan-list a.on{background:var(--brand-soft);color:var(--brand);font-weight:600}
+
+.rank-list li{display:flex;gap:9px;align-items:flex-start;padding:8px 0;border-top:1px dashed var(--line);font-size:13.4px}
+.rank-list li:first-child{border-top:0;padding-top:0}
+.rank-list .no{width:19px;height:19px;flex:none;border-radius:6px;background:var(--bg);color:var(--muted);font-size:11.5px;display:grid;place-items:center;font-weight:700;margin-top:2px}
+.rank-list li:nth-child(1) .no{background:var(--accent);color:#fff}
+.rank-list li:nth-child(2) .no{background:#e2a03f;color:#fff}
+.rank-list li:nth-child(3) .no{background:#7f9cb8;color:#fff}
+.rank-list .n{font-weight:600;color:var(--ink)}
+.rank-list .s{display:block;font-size:11.5px;color:var(--muted);margin-top:1px}
+.feed li{padding:9px 0;border-top:1px dashed var(--line);font-size:13px}
+.feed li:first-child{border-top:0;padding-top:0}
+.feed .t{font-weight:600;color:var(--ink-2)}
+.feed .d{font-size:11.5px;color:var(--muted)}
+
+/* ===== 板块 ===== */
+.sec{margin-bottom:26px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.sec-head h2{font-size:20px;letter-spacing:.4px;display:flex;align-items:center;gap:9px}
+.sec-head h2::before{content:"";width:4px;height:18px;border-radius:2px;background:linear-gradient(180deg,var(--brand-2),var(--brand));display:inline-block}
+.sec-head .sub{font-size:13px;color:var(--muted)}
+.sec-head .more{font-size:13px;color:var(--brand);white-space:nowrap}
+.sec-head .more:hover{text-decoration:underline}
+
+/* 概览 */
+.overview{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow-sm)}
+.overview p{color:var(--ink-2);font-size:14.6px;line-height:1.9;margin-bottom:10px}
+.overview p:last-child{margin-bottom:0}
+.overview em{font-style:normal;color:var(--brand);font-weight:600}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .16s ease,box-shadow .16s ease}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.card .thumb{position:relative;aspect-ratio:4/3;background:#dde6ee}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .badge{position:absolute;left:8px;top:8px;background:rgba(11,107,79,.92);color:#fff;font-size:11px;border-radius:6px;padding:2px 8px;letter-spacing:.4px}
+.card .hot{position:absolute;right:8px;top:8px;background:rgba(15,27,43,.78);color:#ffd9a8;font-size:11px;border-radius:6px;padding:2px 7px;font-variant-numeric:tabular-nums}
+.card .body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:15.5px;line-height:1.4;color:var(--ink)}
+.card .tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:11px;color:var(--brand);background:var(--brand-soft);border-radius:5px;padding:2px 7px;white-space:nowrap}
+.tag.g{color:var(--gold);background:#fbf3e2}
+.tag.o{color:var(--accent);background:var(--accent-soft)}
+.card .desc{font-size:13px;color:var(--muted);line-height:1.72;flex:1}
+.card .foot{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:#8b9dae;border-top:1px dashed var(--line);padding-top:8px}
+.card .foot .score{color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 最新更新列表 */
+.updates{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+.updates li{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:baseline;padding:11px 16px;border-top:1px solid var(--line);font-size:14px}
+.updates li:first-child{border-top:0}
+.updates .time{font-size:12px;color:var(--brand);font-variant-numeric:tabular-nums;font-weight:600}
+.updates .name{font-weight:600;color:var(--ink)}
+.updates .note{color:var(--muted);font-size:13px;display:block;font-weight:400;margin-top:1px}
+.updates .src{font-size:11.5px;color:#93a4b5;white-space:nowrap}
+
+/* 分类筛选 */
+.cats{display:flex;flex-wrap:wrap;gap:9px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow-sm)}
+.cat-btn{border:1px solid var(--line);background:#fff;color:var(--ink-2);border-radius:999px;padding:7px 15px;font-size:13.5px;transition:.15s}
+.cat-btn:hover{border-color:var(--brand);color:var(--brand)}
+.cat-btn[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+.filter-note{width:100%;font-size:12.5px;color:var(--muted);margin-top:4px}
+.filter-note b{color:var(--brand)}
+.hidden{display:none !important}
+.empty-tip{width:100%;font-size:13.5px;color:var(--accent);background:var(--accent-soft);border-radius:9px;padding:10px 14px}
+
+/* 深度解析 */
+.article{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow-sm)}
+.article h2{font-size:20px;margin-bottom:6px}
+.article .kicker{font-size:12.5px;color:var(--muted);margin-bottom:16px}
+.article h3{font-size:16.5px;margin:22px 0 8px;color:var(--ink);padding-left:11px;border-left:3px solid var(--brand-2)}
+.article p{font-size:14.6px;color:var(--ink-2);line-height:1.92;margin-bottom:10px}
+.article ul{margin:8px 0 12px;padding-left:2px}
+.article ul li{position:relative;padding-left:18px;font-size:14.4px;color:var(--ink-2);line-height:1.9;margin-bottom:6px}
+.article ul li::before{content:"";position:absolute;left:2px;top:.72em;width:6px;height:6px;border-radius:2px;background:var(--brand-2);opacity:.75}
+.article .callout{background:var(--brand-soft);border-radius:10px;padding:12px 15px;font-size:14px;color:#0d5a43;line-height:1.85;margin:12px 0}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmp{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;box-shadow:var(--shadow-sm)}
+.cmp h4{font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.cmp .k{font-size:11px;border-radius:5px;padding:1px 7px;background:var(--brand-soft);color:var(--brand)}
+.cmp .k.o{background:var(--accent-soft);color:var(--accent)}
+.cmp ul li{font-size:13.6px;color:var(--ink-2);line-height:1.85;padding:5px 0;border-top:1px dashed var(--line)}
+.cmp ul li:first-child{border-top:0}
+
+/* 指南步骤 */
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px 15px 56px;position:relative;box-shadow:var(--shadow-sm)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:15px;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#12a276,#0b6b4f);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+.step h4{font-size:14.8px;margin-bottom:4px}
+.step p{font-size:13.8px;color:var(--muted);line-height:1.8}
+
+/* FAQ */
+.faq{display:grid;gap:9px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);overflow:hidden}
+details summary{list-style:none;cursor:pointer;padding:13px 16px;font-size:14.6px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;gap:12px;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-size:18px;color:var(--brand);font-weight:400;line-height:1;flex:none}
+details[open] summary::after{content:"−"}
+details summary:hover{background:#f7fbf9}
+details .ans{padding:0 16px 14px;font-size:14px;color:var(--ink-2);line-height:1.9;border-top:1px dashed var(--line);padding-top:11px}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;box-shadow:var(--shadow-sm)}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:12px;color:#fff;font-weight:700;background:var(--brand-2)}
+.cmt .nm{font-size:13.2px;font-weight:600;color:var(--ink)}
+.cmt .tm{font-size:11px;color:#93a4b5;margin-left:auto}
+.cmt p{font-size:13.4px;color:var(--ink-2);line-height:1.8}
+.cmt .on{color:var(--brand);font-size:12.5px}
+
+/* 资讯 */
+.news{display:grid;gap:12px}
+.news-item{display:grid;grid-template-columns:132px 1fr;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow-sm)}
+.news-item img{width:100%;height:100%;max-height:96px;object-fit:cover;border-radius:8px}
+.news-item h4{font-size:14.8px;margin-bottom:4px}
+.news-item .date{font-size:11.5px;color:var(--brand);font-variant-numeric:tabular-nums;margin-bottom:3px}
+.news-item p{font-size:13.2px;color:var(--muted);line-height:1.72}
+
+/* 相关推荐 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow-sm)}
+.tag-index a{font-size:13.4px;color:var(--ink-2);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 13px;transition:.15s}
+.tag-index a:hover{background:var(--brand);border-color:var(--brand);color:#fff}
+
+/* 时间线 */
+.timeline{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow-sm);position:relative}
+.timeline::before{content:"";position:absolute;left:34px;top:26px;bottom:26px;width:2px;background:linear-gradient(180deg,var(--brand-2),rgba(18,138,102,.12))}
+.tl-item{position:relative;padding:0 0 16px 30px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-1px;top:7px;width:11px;height:11px;border-radius:50%;background:#fff;border:2.5px solid var(--brand-2);box-shadow:0 0 0 3px #fff}
+.tl-item .d{font-size:11.5px;color:var(--brand);font-weight:600;font-variant-numeric:tabular-nums}
+.tl-item .h{font-size:14.4px;font-weight:600;margin:1px 0 2px}
+.tl-item .p{font-size:13.2px;color:var(--muted);line-height:1.75}
+
+/* 页尾 */
+footer{background:#0c1c2a;color:#b9cad8;margin-top:34px}
+.foot-main{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding:38px 0 26px}
+.foot-main h4{font-size:13px;color:#fff;letter-spacing:1.5px;margin-bottom:12px;font-weight:600}
+.foot-main a{display:block;font-size:13.2px;color:#9fb4c5;padding:4px 0}
+.foot-main a:hover{color:#8ff0c8}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand strong{color:#fff;font-size:16px;letter-spacing:.5px}
+.foot-desc{font-size:13px;line-height:1.85;color:#8ba3b6;max-width:30em}
+.foot-note{border-top:1px solid rgba(255,255,255,.1);padding:16px 0 26px;font-size:12px;color:#7690a4;line-height:1.9}
+.foot-note b{color:#a9c1d2;font-weight:600}
+
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 250px;gap:22px}
+  .col-left{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:26px}
+  .board{max-width:520px}
+  .foot-main{grid-template-columns:1fr 1fr}
+  .search input{width:110px}
+}
+@media (max-width:740px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:20px}
+  .col-right{position:static}
+  .nav{display:none;position:absolute;top:var(--head-h);left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;flex-direction:column;gap:2px;box-shadow:0 12px 24px rgba(15,27,43,.1)}
+  .nav.open{display:flex}
+  .head .wrap{gap:12px}
+  .menu-btn{display:inline-block}
+  .search{display:none}
+  .brand-text span{display:none}
+  .updates li{grid-template-columns:56px 1fr;}
+  .updates .src{display:none}
+  .compare{grid-template-columns:1fr}
+  .news-item{grid-template-columns:1fr}
+  .news-item img{max-height:150px}
+  .foot-main{grid-template-columns:1fr;gap:22px}
+  .hero-stats{gap:18px}
+  .article{padding:18px}
+  .overview{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important}
+  html{scroll-behavior:auto}
+}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 14px)}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="ann" role="region" aria-label="更新公告">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <b>今日更新</b>
+    <div class="ticker">
+      <span>11 月 25 日新增 <a href="/#updates">欧洲一级联赛第 13 轮 6 场集锦</a></span>
+      <span>亚洲二级联赛杯赛半决赛次回合赛程已上线</span>
+      <span>积分榜同步至 11 月 24 日完场</span>
+    </div>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="欧洲一级亚洲二级在线观 首页">
+      <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-label="品牌图形：球场与双弧线">
+        <defs>
+          <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#12a276"/>
+            <stop offset="1" stop-color="#0b6b4f"/>
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#bg1)"/>
+        <rect x="8" y="10" width="24" height="20" rx="2.5" fill="none" stroke="#e9faf3" stroke-width="1.6" opacity=".9"/>
+        <line x1="20" y1="10" x2="20" y2="30" stroke="#e9faf3" stroke-width="1.6" opacity=".9"/>
+        <circle cx="20" cy="20" r="4.2" fill="none" stroke="#e9faf3" stroke-width="1.6" opacity=".9"/>
+        <path d="M8 14.5h3.4v11H8zM28.6 14.5H32v11h-3.4z" fill="#8ff0c8" opacity=".85"/>
+      </svg>
+      <span class="brand-text">
+        <strong>欧洲一级亚洲二级在线观</strong>
+        <span>EURO · ASIA MATCH HUB</span>
+      </span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="频道导航">
+      <a href="/#pick">精选赛事</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#cats">分类筛选</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观赛指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">球迷评论</a>
+      <a href="/#news">赛事资讯</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search" role="search" onsubmit="return false;">
+        <input id="q" type="search" placeholder="搜索球队 / 联赛 / 条目" aria-label="搜索页面内赛事条目">
+        <button type="button" id="qBtn">查找</button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">频道</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tagpill">欧洲一级联赛 · 亚洲二级联赛 · 双线赛程</span>
+      <h1>欧洲一级亚洲二级在线观</h1>
+      <p class="lead">把两条赛线的直播与回放放在同一处：<b>欧洲一级联赛</b>看五大联赛强强对话与争四卡位，<b>亚洲二级联赛</b>看升级附加赛、杯赛半决赛与青年梯队出战。每场都标注开球时间、转播渠道和对阵看点，方便周末与深夜排期。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#pick">查看今日精选赛事</a>
+        <a class="btn-line" href="/#updates">最新更新与赛果</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>6 场</strong><span>今日欧洲一级联赛完场</span></div>
+        <div><strong>4 场</strong><span>亚洲二级联赛本周赛程</span></div>
+        <div><strong>18 条</strong><span>近 30 天赛事回放</span></div>
+      </div>
+    </div>
+    <aside class="board" aria-label="今日赛程板">
+      <div class="board-top"><b>今日赛程板</b><span>2026-11-25</span></div>
+      <div class="match">
+        <div class="team">皇家社会</div>
+        <div class="score">2 : 1</div>
+        <div class="team r">赫罗纳</div>
+        <div class="meta">欧洲一级联赛 · 第 13 轮 · 已完场</div>
+      </div>
+      <div class="match">
+        <div class="team">莱斯特城</div>
+        <div class="score">1 : 1</div>
+        <div class="team r">诺维奇</div>
+        <div class="meta">欧洲一级联赛 · 第 13 轮 · 已完场</div>
+      </div>
+      <div class="match">
+        <div class="team">水原三星</div>
+        <div class="score">20:00</div>
+        <div class="team r">庆南 FC</div>
+        <div class="meta">亚洲二级联赛 · 升级附加赛半决赛 · 待开球</div>
+      </div>
+      <div class="match">
+        <div class="team">柔佛 DT 二队</div>
+        <div class="score">21:45</div>
+        <div class="team r">巴吞联</div>
+        <div class="meta">亚洲二级联赛 · 杯赛次回合 · 待开球</div>
+      </div>
+      <div class="board-foot"><span>数据同步 11-25 09:30</span><span>共 4 场</span></div>
+    </aside>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左频道索引 -->
+    <aside class="col-left" aria-label="频道索引">
+      <div class="panel panel-pad">
+        <div class="side-title">频道索引</div>
+        <nav class="chan-list">
+          <a class="on" href="/#pick">精选赛事 <span>12</span></a>
+          <a href="/#updates">最新更新 <span>10</span></a>
+          <a href="/#cats">分类筛选 <span>8</span></a>
+          <a href="/#deep">深度解析 <span>—</span></a>
+          <a href="/#guide">观赛指南 <span>4</span></a>
+          <a href="/#faq">常见问题 <span>6</span></a>
+          <a href="/#comments">球迷评论 <span>16</span></a>
+          <a href="/#news">赛事资讯 <span>6</span></a>
+          <a href="/#related">相关推荐 <span>8</span></a>
+          <a href="/#timeline">赛程时间线 <span>5</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- 中主内容 -->
+    <main>
+
+      <!-- 1 主题领域概览 -->
+      <section class="sec" id="overview">
+        <div class="sec-head">
+          <h2>两条赛线，各看什么</h2>
+          <span class="sub">欧洲一级联赛与亚洲二级联赛的内容分工</span>
+        </div>
+        <div class="overview">
+          <p><em>欧洲一级联赛</em>指英超、西甲、意甲、德甲、法甲这五条顶级赛线，赛季从 8 月延续到次年 5 月，节奏密集、轮次稳定，一周双赛常见。它的观赏重点集中在三类：争冠集团的直接对话、欧冠区与欧联区的卡位战、以及保级队的换帅反弹。因为转播机位多、数据颗粒细，赛后回放与集锦基本当天可看。</p>
+          <p><em>亚洲二级联赛</em>覆盖日职乙、K 联赛 2、泰超、马来超等次级赛线，赛季多与欧洲错峰或部分重叠。它的看点不在巨星，而在升级名额的争夺、杯赛单场淘汰的偶然性，以及青年梯队与一线队之间的流动。次级联赛的转播场次有限，主场氛围和临场阵容变化往往比纸面实力更能决定结果。</p>
+          <p>两条赛线并置观看的实际意义是排期互补：欧洲场次集中在周末深夜与周中凌晨，亚洲二级联赛多在傍晚到晚间开球，正好填补空档。当前值得关注的几条线包括西甲争四、英冠升级附加赛席位、日职乙的自动升级区拉锯，以及 K 联赛 2 的保级组混战。</p>
+          <p>需要提醒的是，次级联赛的赛程调整频率明显高于顶级联赛，遇到杯赛冲突或场地问题常会临时改期。关注具体条目时，以页面标注的开球时间为准，并在赛前两小时再确认一次首发名单。</p>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="sec" id="pick">
+        <div class="sec-head">
+          <h2>精选赛事与回放</h2>
+          <span class="sub">12 条可直观看的条目</span>
+          <a class="more" href="/#updates">看最新更新 →</a>
+        </div>
+        <div class="cards" id="pickCards">
+
+          <article class="card" data-tags="欧洲一级 西甲">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-laliga13/400/300" width="400" height="300" loading="lazy" alt="皇家社会对赫罗纳西甲第 13 轮比赛画面">
+              <span class="badge">西甲</span><span class="hot">热度 96</span>
+            </div>
+            <div class="body">
+              <h3>皇家社会 2:1 赫罗纳</h3>
+              <div class="tags"><span class="tag">第 13 轮</span><span class="tag">争四</span><span class="tag">全场回放</span></div>
+              <p class="desc">主队下半场换双前锋后连入两球，赫罗纳的高位压迫在 60 分钟后体能下滑明显。这场是判断西甲中游球队争四成色的样本。</p>
+              <div class="foot"><span>11-25 完场</span><span class="score">8.6 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="欧洲一级 英超">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-epl-derby22/400/300" width="400" height="300" loading="lazy" alt="英超伦敦德比战球场全景">
+              <span class="badge">英超</span><span class="hot">热度 94</span>
+            </div>
+            <div class="body">
+              <h3>伦敦德比：富勒姆 vs 水晶宫</h3>
+              <div class="tags"><span class="tag">德比</span><span class="tag">低位防守</span><span class="tag">集锦</span></div>
+              <p class="desc">两队都擅长五后卫收缩，进球多来自定位球二次进攻。想研究英超中下游如何互相消耗，这场比强强对话更典型。</p>
+              <div class="foot"><span>11-24 完场</span><span class="score">8.2 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="亚洲二级 K联赛2">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/asia-k2-suwin/400/300" width="400" height="300" loading="lazy" alt="水原三星对庆南 FC 升级附加赛现场">
+              <span class="badge">K 联赛 2</span><span class="hot">热度 91</span>
+            </div>
+            <div class="body">
+              <h3>水原三星 vs 庆南 FC</h3>
+              <div class="tags"><span class="tag">升级附加赛</span><span class="tag">半决赛</span><span class="tag">今晚直播</span></div>
+              <p class="desc">首回合 1:1，次回合主场作战的水原必须解决边路传中效率问题。庆南的反击速度是整轮系列赛的最大变量。</p>
+              <div class="foot"><span>今天 20:00</span><span class="score">热度 91</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="亚洲二级 泰超">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/asia-thai-bg/400/300" width="400" height="300" loading="lazy" alt="巴吞联主场杯赛次回合看台">
+              <span class="badge">泰超</span><span class="hot">热度 87</span>
+            </div>
+            <div class="body">
+              <h3>巴吞联 vs 柔佛 DT 二队</h3>
+              <div class="tags"><span class="tag">杯赛次回合</span><span class="tag">外援轮换</span><span class="tag">赛程</span></div>
+              <p class="desc">首回合客队两球领先，巴吞联次回合需要压上，但联赛保级压力让主帅倾向轮换。看点是替补阵容能否撑住前 30 分钟。</p>
+              <div class="foot"><span>今天 21:45</span><span class="score">热度 87</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="欧洲一级 意甲">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-seriea-atl/400/300" width="400" height="300" loading="lazy" alt="亚特兰大主场意甲比赛进攻画面">
+              <span class="badge">意甲</span><span class="hot">热度 85</span>
+            </div>
+            <div class="body">
+              <h3>亚特兰大 3:2 博洛尼亚</h3>
+              <div class="tags"><span class="tag">人盯人</span><span class="tag">高比分</span><span class="tag">全场回放</span></div>
+              <p class="desc">两队都打人盯人，中场对位一度完全错开，五球全部来自转换进攻。适合看意甲非传统强队如何用体系弥补个人差距。</p>
+              <div class="foot"><span>11-23 完场</span><span class="score">8.4 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="亚洲二级 日职乙">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/asia-j2-promo/400/300" width="400" height="300" loading="lazy" alt="日职乙升级区球队主场草坪">
+              <span class="badge">日职乙</span><span class="hot">热度 83</span>
+            </div>
+            <div class="body">
+              <h3>日职乙升级区三队拉锯</h3>
+              <div class="tags"><span class="tag">自动升级</span><span class="tag">积分榜</span><span class="tag">专题</span></div>
+              <p class="desc">第三到第五名只差两分，剩余四轮里有两场直接对话。专题按剩余赛程难度排出三队的升级概率与关键场次。</p>
+              <div class="foot"><span>11-22 更新</span><span class="score">专题</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="欧洲一级 德甲">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-bundes-fr/400/300" width="400" height="300" loading="lazy" alt="德甲弗赖堡主场反击瞬间">
+              <span class="badge">德甲</span><span class="hot">热度 82</span>
+            </div>
+            <div class="body">
+              <h3>弗赖堡 vs 法兰克福</h3>
+              <div class="tags"><span class="tag">反击</span><span class="tag">边翼卫</span><span class="tag">集锦</span></div>
+              <p class="desc">两支欧战区边缘球队的对冲，胜负点在三中卫体系下边翼卫的回追距离。德甲中段的欧战席位竞争向来比争冠更胶着。</p>
+              <div class="foot"><span>11-24 完场</span><span class="score">8.0 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="欧洲一级 法甲">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-ligue1-ly/400/300" width="400" height="300" loading="lazy" alt="法甲里昂主场青年球员出场">
+              <span class="badge">法甲</span><span class="hot">热度 79</span>
+            </div>
+            <div class="body">
+              <h3>里昂青年军轮换观察</h3>
+              <div class="tags"><span class="tag">青年梯队</span><span class="tag">轮换</span><span class="tag">球员观察</span></div>
+              <p class="desc">双线作战下里昂连续三场派出 21 岁以下首发，中场出球质量反而提升。适合关注法甲青训产出与租借回流的球迷。</p>
+              <div class="foot"><span>11-21 更新</span><span class="score">观察</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="亚洲二级 马来超">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/asia-malaysia-cup/400/300" width="400" height="300" loading="lazy" alt="马来超杯赛夜场灯光下的球场">
+              <span class="badge">马来超</span><span class="hot">热度 76</span>
+            </div>
+            <div class="body">
+              <h3>马来超杯赛八强对阵表</h3>
+              <div class="tags"><span class="tag">八强</span><span class="tag">单场淘汰</span><span class="tag">对阵表</span></div>
+              <p class="desc">八强全部一场定胜负，四支球队来自次级联赛。单场淘汰下主场优势被放大，点球大战概率明显高于联赛制赛事。</p>
+              <div class="foot"><span>11-20 更新</span><span class="score">对阵表</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="欧洲一级 西甲">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-laliga-betis/400/300" width="400" height="300" loading="lazy" alt="贝蒂斯主场西甲角球争顶">
+              <span class="badge">西甲</span><span class="hot">热度 74</span>
+            </div>
+            <div class="body">
+              <h3>贝蒂斯定位球套路拆解</h3>
+              <div class="tags"><span class="tag">定位球</span><span class="tag">战术</span><span class="tag">图解</span></div>
+              <p class="desc">本赛季贝蒂斯 11 个联赛进球有 5 个来自角球二次进攻，跑位分工固定。图文拆出三套最常用的前点掩护方案。</p>
+              <div class="foot"><span>11-19 更新</span><span class="score">图解</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="亚洲二级 日职乙">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/asia-j2-away/400/300" width="400" height="300" loading="lazy" alt="日职乙客场球迷看台助威">
+              <span class="badge">日职乙</span><span class="hot">热度 71</span>
+            </div>
+            <div class="body">
+              <h3>客场远征观赛记录</h3>
+              <div class="tags"><span class="tag">客场</span><span class="tag">看台文化</span><span class="tag">图文</span></div>
+              <p class="desc">从新干线换乘到球场摆渡车的完整路线，含票务、入场时间与客队看台位置。次级联赛的客场体验往往比顶级联赛更直接。</p>
+              <div class="foot"><span>11-18 更新</span><span class="score">图文</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="欧洲一级 英超">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euro-epl-setpiece/400/300" width="400" height="300" loading="lazy" alt="英超定位球防守人墙布置">
+              <span class="badge">英超</span><span class="hot">热度 69</span>
+            </div>
+            <div class="body">
+              <h3>英超升班马的防守下限</h3>
+              <div class="tags"><span class="tag">升班马</span><span class="tag">防守</span><span class="tag">数据</span></div>
+              <p class="desc">三支升班马前 13 轮的丢球分布显示，问题集中在边路回防与二点球争抢，而非门将个人能力。附对手强度对照。</p>
+              <div class="foot"><span>11-17 更新</span><span class="score">数据</span></div>
+            </div>
+          </article>
+
+        </div>
+        <p class="empty-tip hidden" id="pickEmpty">没有匹配的赛事条目，换个关键词试试，例如「西甲」「日职乙」「升级附加赛」。</p>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="sec" id="updates">
+        <div class="sec-head">
+          <h2>最新更新与赛果</h2>
+          <span class="sub">10 条动态 · 截至 11 月 25 日</span>
+        </div>
+        <ul class="updates">
+          <li><span class="time">今天 09:30</span><span><span class="name">皇家社会 2:1 赫罗纳</span><span class="note">西甲第 13 轮全场回放与进球集锦已上线</span></span><span class="src">西甲</span></li>
+          <li><span class="time">今天 08:50</span><span><span class="name">欧洲一级联赛第 13 轮积分榜</span><span class="note">争四区四队积分差缩至 3 分，已同步完场数据</span></span><span class="src">榜单</span></li>
+          <li><span class="time">今天 08:10</span><span><span class="name">水原三星 vs 庆南 FC</span><span class="note">首发名单预计 19:00 公布，次回合今晚 20:00 开球</span></span><span class="src">K 联赛 2</span></li>
+          <li><span class="time">昨天 21:10</span><span><span class="name">莱斯特城 1:1 诺维奇</span><span class="note">英冠升级区直接对话打平，集锦与赛后数据已更新</span></span><span class="src">英冠</span></li>
+          <li><span class="time">昨天 18:40</span><span><span class="name">巴吞联杯赛次回合</span><span class="note">赛程确认不变，21:45 开球，客队外援名单待定</span></span><span class="src">泰超</span></li>
+          <li><span class="time">11 月 24 日</span><span><span class="name">日职乙第 40 轮</span><span class="note">升级区三队两胜一平，自动升级名额悬念延续到末轮</span></span><span class="src">日职乙</span></li>
+          <li><span class="time">11 月 23 日</span><span><span class="name">亚特兰大 3:2 博洛尼亚</span><span class="note">意甲本轮最高进球场次，五球集锦与战术图解已发布</span></span><span class="src">意甲</span></li>
+          <li><span class="time">11 月 22 日</span><span><span class="name">马来超杯赛八强</span><span class="note">对阵表更新，两场改期至 11 月 28 日进行</span></span><span class="src">马来超</span></li>
+          <li><span class="time">11 月 21 日</span><span><span class="name">里昂青年军轮换观察</span><span class="note">连续三场 21 岁以下首发，球员观察条目已补充</span></span><span class="src">法甲</span></li>
+          <li><span class="time">11 月 20 日</span><span><span class="name">K 联赛 2 保级组</span><span class="note">倒数两名分差 1 分，剩余两轮均为直接对话</span></span><span class="src">K 联赛 2</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="sec" id="cats">
+        <div class="sec-head">
+          <h2>按类型筛选</h2>
+          <span class="sub">点击分类可过滤上方精选赛事</span>
+        </div>
+        <div class="cats" role="group" aria-label="赛事分类筛选">
+          <button class="cat-btn" data-cat="all" aria-pressed="true">全部</button>
+          <button class="cat-btn" data-cat="欧洲一级" aria-pressed="false">欧洲一级联赛</button>
+          <button class="cat-btn" data-cat="亚洲二级" aria-pressed="false">亚洲二级联赛</button>
+          <button class="cat-btn" data-cat="西甲" aria-pressed="false">西甲</button>
+          <button class="cat-btn" data-cat="英超" aria-pressed="false">英超</button>
+          <button class="cat-btn" data-cat="意甲" aria-pressed="false">意甲</button>
+          <button class="cat-btn" data-cat="德甲" aria-pressed="false">德甲</button>
+          <button class="cat-btn" data-cat="法甲" aria-pressed="false">法甲</button>
+          <button class="cat-btn" data-cat="日职乙" aria-pressed="false">日职乙</button>
+          <button class="cat-btn" data-cat="K联赛2" aria-pressed="false">K 联赛 2</button>
+          <button class="cat-btn" data-cat="泰超" aria-pressed="false">泰超</button>
+          <button class="cat-btn" data-cat="升级附加赛" aria-pressed="false">升级附加赛</button>
+          <p class="filter-note" id="filterNote">当前显示 <b>12</b> 条精选赛事条目。</p>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="deep">
+        <div class="sec-head">
+          <h2>深度解析</h2>
+          <span class="sub">两条赛线的观看差异与判断维度</span>
+        </div>
+        <article class="article">
+          <h2>欧洲一级联赛与亚洲二级联赛，观赛逻辑并不相同</h2>
+          <p class="kicker">从赛制、转播密度到临场变量，逐项拆开看</p>
+
+          <p>把两条赛线放在同一个入口里，最容易犯的错是用同一套标准去衡量。欧洲一级联赛的样本量大、数据公开度高，判断一支球队强弱可以依赖连续 10 轮以上的趋势；亚洲二级联赛单赛季轮次少、阵容变动频繁，更依赖临场信息与主客场差异。下面按几个具体维度展开。</p>
+
+          <h3>赛制结构决定了你该看哪一轮</h3>
+          <p>欧洲五大联赛都是双循环联赛制，38 轮（德甲 34 轮）里真正决定赛季走向的窗口通常只有三段：开局 6 轮的磨合期、冬歇前后的伤病期、以及最后 8 轮的卡位期。中间大段比赛观赏价值相对平均，适合按对阵挑，而不是按轮次追。</p>
+          <p>亚洲二级联赛的结构更杂。日职乙是 38 轮纯联赛加升级附加赛，K 联赛 2 分常规赛与保级组，泰超与马来超则常与杯赛交叉进行。次级联赛的杯赛多为单场淘汰，一场定胜负带来的不确定性远高于联赛，这也是很多冷门产生的地方。</p>
+          <ul>
+            <li>联赛制：看趋势、看积分曲线、看连续轮次的稳定性</li>
+            <li>附加赛制：看单场状态、看主客场、看主力是否齐整</li>
+            <li>杯赛交叉：看轮换意愿，强队常在半决赛前保留主力</li>
+          </ul>
+
+          <h3>转播密度与回放可得性</h3>
+          <p>欧洲一级联赛几乎每场都有完整回放与多机位集锦，赛后两小时内即可观看，数据面板也同步更新。亚洲二级联赛的转播场次有限，部分场次只有单机位或仅提供集锦，回放延迟可能到次日。这意味着看次级联赛更需要「按场次计划」，而不是「按时间随手打开」。</p>
+          <div class="callout">实用做法：欧洲场次可以赛后补看，亚洲二级联赛的关键场次（升级附加赛、杯赛半决赛、保级直接对话）尽量看直播，因为回放往往缺少关键机位，临场细节会丢失。</div>
+
+          <h3>判断一场比赛值不值得投入时间</h3>
+          <p>不看球队名气，只看四个变量：积分位置是否接近、双方近期是否有直接竞争关系、主力伤停是否集中、以及是否存在赛程挤压（例如三天两赛）。四项里满足两项以上，通常值得完整观看；只满足一项，看集锦即可。</p>
+          <ul>
+            <li>积分差在 3 分以内，且同处争冠、欧战或保级区间</li>
+            <li>赛季内已有一次交锋，且首回合结果存在争议</li>
+            <li>一方主力中卫或后腰缺阵，防守结构被动调整</li>
+            <li>双方都在一周双赛，下半场体能差异会放大</li>
+          </ul>
+
+          <h3>次级联赛的三个常见误判</h3>
+          <p>第一，把顶级联赛的数据模型直接套用。次级联赛的场均进球、定位球占比与顶级联赛差异明显，直接套用会系统性高估强队。第二，忽视主客场的地理因素，亚洲二级联赛的跨区客场常伴随长途飞行与时差，实际影响大于纸面实力差。第三，低估青年梯队的波动，年轻球员单场表现出色后常被抽调一线队，下一轮阵容反而削弱。</p>
+
+          <h3>两条赛线怎么排期最省力</h3>
+          <p>一个可行的一周排法是：周中凌晨看欧洲一级联赛的补赛或杯赛，周末晚间看亚洲二级联赛的联赛轮次，周末深夜再补欧洲联赛的重点场。这样既不会连续熬夜，也不会错过次级联赛的关键节点。遇到升级附加赛与联赛末轮重叠的周末，优先看附加赛，因为它只有一次机会。</p>
+        </article>
+      </section>
+
+      <!-- 6 观赛指南 -->
+      <section class="sec" id="guide">
+        <div class="sec-head">
+          <h2>观赛顺序与判断依据</h2>
+          <span class="sub">第一次接触两条赛线的入手路径</span>
+        </div>
+        <div class="compare" style="margin-bottom:14px">
+          <div class="cmp">
+            <h4><span class="k">欧洲一级</span>先看什么</h4>
+            <ul>
+              <li>先看争四与保级的直接对话，信息量最大</li>
+              <li>再看战术特征鲜明的中游球队，如人盯人体系</li>
+              <li>强强对话可留到赛后看集锦，避免熬夜成本</li>
+            </ul>
+          </div>
+          <div class="cmp">
+            <h4><span class="k o">亚洲二级</span>先看什么</h4>
+            <ul>
+              <li>先看升级附加赛与杯赛半决赛，单场淘汰悬念足</li>
+              <li>再看积分接近的保级组对话，节奏偏紧</li>
+              <li>普通轮次建议看集锦，节省时间</li>
+            </ul>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h4>第一步：确认赛线，别混着排</h4>
+            <p>先决定这一周主要看哪条线。两条线一起追容易疲劳，实际体验反而下降。选定主线后，另一条只看关键场次。</p>
+          </div>
+          <div class="step">
+            <h4>第二步：按积分位置筛场次</h4>
+            <p>打开积分榜，圈出分差 3 分以内的相邻两队，他们之间的对话优先。这个规则在两条赛线都适用，且比看球队名气更有效。</p>
+          </div>
+          <div class="step">
+            <h4>第三步：确认主力齐整度</h4>
+            <p>赛前两小时看首发。次级联赛的阵容信息发布较晚，若关键位置出现轮换，原先的判断需要下调一档。</p>
+          </div>
+          <div class="step">
+            <h4>第四步：判断回放还是直播</h4>
+            <p>有完整回放与多机位的场次可以赛后补；只有单机位或集锦的场次尽量看直播，否则会丢掉判断所需的关键细节。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="sec" id="faq">
+        <div class="sec-head">
+          <h2>常见问题</h2>
+          <span class="sub">6 个看球时最常遇到的疑问</span>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>欧洲一级联赛和亚洲二级联赛的赛季时间一般怎么错开？</summary>
+            <div class="ans">欧洲五大联赛通常 8 月中下旬开赛，次年 5 月收官，冬歇期在 12 月底到 1 月初。亚洲二级联赛中，日职乙为 2 月至 11 月，K 联赛 2 为 3 月至 11 月，泰超与马来超多跨自然年。实际重叠期集中在 9 月至 11 月，这也是两条赛线同时有内容可看的窗口。</div>
+          </details>
+          <details>
+            <summary>次级联赛的升级附加赛和直接升级有什么区别？</summary>
+            <div class="ans">直接升级是联赛结束时排名靠前的球队直接获得上级联赛资格，名额通常为 2 个。升级附加赛由排名 3 至 6 位的球队参加，通过单场或两回合淘汰决出最后一个名额。附加赛的偶然性明显更大，主场优势与临场状态权重高于整个赛季的稳定性。</div>
+          </details>
+          <details>
+            <summary>第一次看亚洲二级联赛，从哪类场次入手比较好？</summary>
+            <div class="ans">建议从升级附加赛或杯赛半决赛入手。这类场次强度高、双方动机明确，即使不熟悉球队也能看出对抗质量。适应节奏后再看普通联赛轮次，会更容易理解球队的战术取向与轮换逻辑。</div>
+          </details>
+          <details>
+            <summary>欧洲一级联赛的争四和保级，哪个更值得追？</summary>
+            <div class="ans">看你想获取什么。争四场次的技战术含量更高，球队会主动压上，进球与失误都多；保级场次节奏更紧、犯规更多，观赏性偏低但结果悬念更大。如果时间有限，优先看两队积分接近且同处一个区间的比赛，无论争四还是保级。</div>
+          </details>
+          <details>
+            <summary>为什么次级联赛的回放经常比顶级联赛晚？</summary>
+            <div class="ans">转播资源与机位数量差异是主因。顶级联赛每场配备多机位与独立数据团队，赛后剪辑流程标准化；次级联赛部分场次只有单机位或地方转播，素材汇总与版权处理需要更长时间，回放常延后到次日。</div>
+          </details>
+          <details>
+            <summary>判断一场比赛值不值得看，有没有简单标准？</summary>
+            <div class="ans">可以用四个变量快速判断：积分差是否在 3 分以内、双方是否有直接竞争关系、主力伤停是否集中、是否存在三天两赛的赛程挤压。满足两项以上值得完整观看，只满足一项看集锦即可。这个标准对两条赛线都适用。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="sec" id="comments">
+        <div class="sec-head">
+          <h2>球迷评论</h2>
+          <span class="sub">16 条 · 围绕具体场次与类型</span>
+        </div>
+        <div class="comments">
+          <div class="cmt"><div class="who"><span class="avatar">林</span><span class="nm">林间看台</span><span class="tm">今天 10:12</span></div><p>皇家社会那场下半场换双前锋是真的有效，赫罗纳 60 分钟后中场完全跟不上。<span class="on">西甲争四</span>今年确实比往年乱。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#c2410c">陈</span><span class="nm">陈氏越位</span><span class="tm">今天 09:48</span></div><p>水原三星首回合客场拿到 1:1 已经不错了，次回合主场只要不丢定位球就有机会。<span class="on">K 联赛 2</span>的附加赛比联赛好看。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#a5781b">周</span><span class="nm">周末补赛</span><span class="tm">今天 09:05</span></div><p>莱斯特城和诺维奇打平对谁都不算好结果，英冠升级区今年太挤，一场平局就掉两位。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#7f9cb8">吴</span><span class="nm">吴记战术板</span><span class="tm">昨天 22:30</span></div><p>亚特兰大和博洛尼亚那场五球全是转换，人盯人对人盯人一旦错位就是大片空当，意甲今年这种比赛变多了。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#0b6b4f">赵</span><span class="nm">赵家角旗</span><span class="tm">昨天 21:16</span></div><p>日职乙升级区三队拉锯那个专题做得细，剩余赛程难度排得挺合理，第三到第五确实只差两分。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#128a66">孙</span><span class="nm">孙氏长传</span><span class="tm">昨天 20:02</span></div><p>巴吞联次回合要压上，但联赛保级压力摆在那，主帅大概率轮换。这种两难局面在泰超很常见。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#22344a">李</span><span class="nm">李四的球票</span><span class="tm">昨天 18:44</span></div><p>客场远征那篇记录实用，摆渡车时间写得很准。次级联赛的客场体验确实比顶级联赛直接，球迷距离近。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#c2410c">郑</span><span class="nm">郑在看台</span><span class="tm">11 月 24 日</span></div><p>贝蒂斯定位球那套前点掩护我反复看了三遍，跑位确实固定，难怪角球转化率这么高。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#a5781b">冯</span><span class="nm">冯氏门线</span><span class="tm">11 月 24 日</span></div><p>马来超杯赛八强两场改期有点突然，本来计划周末看的，现在得挪到 28 号。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#7f9cb8">何</span><span class="nm">何止九十分钟</span><span class="tm">11 月 23 日</span></div><p>里昂青年军那篇观察不错，连续三场 21 岁以下首发还能保持出球质量，法甲青训确实有东西。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#0b6b4f">许</span><span class="nm">许氏补时</span><span class="tm">11 月 23 日</span></div><p>英超升班马防守下限那组数据挺说明问题，问题真不在门将，边路回防太慢，二点球基本抢不到。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#128a66">邓</span><span class="nm">邓记越位线</span><span class="tm">11 月 22 日</span></div><p>弗赖堡和法兰克福那场边翼卫回追距离是胜负手，这个角度平时很少人讲，德甲中游球队的欧战席位确实胶着。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#22344a">韩</span><span class="nm">韩式反击</span><span class="tm">11 月 22 日</span></div><p>K 联赛 2 保级组倒数两名只差一分，剩下两轮都是直接对话，这种赛程安排太残酷了。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#c2410c">曹</span><span class="nm">曹家看台角</span><span class="tm">11 月 21 日</span></div><p>伦敦德比那场确实闷，五后卫对五后卫，进球全靠定位球二次进攻。中下游互相消耗就是这个样子。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#a5781b">彭</span><span class="nm">彭氏边线球</span><span class="tm">11 月 20 日</span></div><p>次级联赛回放慢是真的，上次看一场日职乙只有集锦，关键机位都没有，看得有点难受。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#7f9cb8">袁</span><span class="nm">袁看积分榜</span><span class="tm">11 月 19 日</span></div><p>建议欧洲场次赛后补看，亚洲二级的关键场次看直播，这个排法我试了一周，确实省力不少。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="sec" id="news">
+        <div class="sec-head">
+          <h2>赛事资讯</h2>
+          <span class="sub">6 条 · 近 30 天动态</span>
+        </div>
+        <div class="news">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-laliga-13/600/400" width="600" height="400" loading="lazy" alt="西甲第 13 轮争四区积分榜画面">
+            <div>
+              <div class="date">2026-11-25</div>
+              <h4>西甲第 13 轮战罢，争四区四队分差缩至 3 分</h4>
+              <p>皇家社会主场取胜后进入前四，赫罗纳、贝蒂斯与比利亚雷亚尔紧随其后，剩余两轮将出现两场直接对话。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-k2-playoff/600/400" width="600" height="400" loading="lazy" alt="K 联赛 2 升级附加赛球场夜场">
+            <div>
+              <div class="date">2026-11-24</div>
+              <h4>K 联赛 2 升级附加赛半决赛次回合今晚开球</h4>
+              <p>水原三星与庆南 FC 首回合 1:1，次回合胜者进入决赛，对阵另一组半决赛的晋级球队。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-j2-final/600/400" width="600" height="400" loading="lazy" alt="日职乙末轮升级区比赛现场">
+            <div>
+              <div class="date">2026-11-23</div>
+              <h4>日职乙升级悬念延续到末轮，三队仅差两分</h4>
+              <p>第三到第五名在剩余四轮中有两场直接交手，自动升级名额与附加赛席位仍未确定。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-malaysia-cup/600/400" width="600" height="400" loading="lazy" alt="马来超杯赛八强对阵表展示">
+            <div>
+              <div class="date">2026-11-22</div>
+              <h4>马来超杯赛八强两场改期至 11 月 28 日</h4>
+              <p>受场地安排影响，两场四分之一决赛推迟进行，对阵关系与主客场顺序保持不变。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-seriea-goals/600/400" width="600" height="400" loading="lazy" alt="意甲本轮高比分比赛进球瞬间">
+            <div>
+              <div class="date">2026-11-21</div>
+              <h4>意甲本轮场均进球升至 3.1 个，人盯人体系增多</h4>
+              <p>多支中游球队改用全场人盯人，转换进攻比例上升，直接推高了单场进球数。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-ligue1-youth/600/400" width="600" height="400" loading="lazy" alt="法甲里昂青年球员赛前热身">
+            <div>
+              <div class="date">2026-11-19</div>
+              <h4>法甲多队启用青年梯队，21 岁以下首发比例上升</h4>
+              <p>双线作战下，里昂等队连续派出年轻首发，中场出球质量未出现明显下滑。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="sec" id="related">
+        <div class="sec-head">
+          <h2>延伸方向</h2>
+          <span class="sub">8 个可继续深入的内容方向</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#deep">升级附加赛赛制详解</a>
+          <a href="/#guide">次级联赛客场观赛路线</a>
+          <a href="/#pick">西甲争四球队对比</a>
+          <a href="/#deep">人盯人体系的转换风险</a>
+          <a href="/#timeline">联赛末轮同时开球规则</a>
+          <a href="/#faq">杯赛单场淘汰与两回合差异</a>
+          <a href="/#comments">日职乙升级区球迷讨论</a>
+          <a href="/#news">K 联赛 2 保级组赛程</a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：赛程时间线 -->
+      <section class="sec" id="timeline">
+        <div class="sec-head">
+          <h2>近一周赛程时间线</h2>
+          <span class="sub">按日期排列的关键节点</span>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="d">11 月 25 日 · 今天</div>
+            <div class="h">K 联赛 2 升级附加赛次回合 + 泰超杯赛次回合</div>
+            <div class="p">水原三星 20:00 主场迎战庆南 FC；巴吞联 21:45 主场对阵柔佛 DT 二队。</div>
+          </div>
+          <div class="tl-item">
+            <div class="d">11 月 26 日 · 明天</div>
+            <div class="h">欧洲一级联赛第 14 轮提前场</div>
+            <div class="p">德甲与法甲各一场提前开球，涉及欧战区边缘球队，回放预计赛后两小时内上线。</div>
+          </div>
+          <div class="tl-item">
+            <div class="d">11 月 28 日</div>
+            <div class="h">马来超杯赛八强补赛</div>
+            <div class="p">两场改期赛事同日进行，单场淘汰制，胜者进入四强。</div>
+          </div>
+          <div class="tl-item">
+            <div class="d">11 月 29 日</div>
+            <div class="h">日职乙第 41 轮</div>
+            <div class="p">升级区三队同日开球，其中一场为直接对话，结果将决定自动升级名额归属。</div>
+          </div>
+          <div class="tl-item">
+            <div class="d">12 月 1 日</div>
+            <div class="h">欧洲一级联赛第 14 轮集中开赛</div>
+            <div class="p">西甲争四区两场直接对话，英超与意甲各有保级关键战，完整排期已上线。</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="col-right" aria-label="榜单与更新流">
+      <div class="panel panel-pad" style="margin-bottom:16px">
+        <div class="side-title">热度榜 · 11 月 25 日</div>
+        <ol class="rank-list">
+          <li><span class="no">1</span><span><span class="n">皇家社会 2:1 赫罗纳</span><span class="s">西甲第 13 轮 · 热度 96</span></span></li>
+          <li><span class="no">2</span><span><span class="n">水原三星 vs 庆南 FC</span><span class="s">升级附加赛 · 热度 91</span></span></li>
+          <li><span class="no">3</span><span><span class="n">伦敦德比集锦</span><span class="s">英超 · 热度 94</span></span></li>
+          <li><span class="no">4</span><span><span class="n">巴吞联杯赛次回合</span><span class="s">泰超 · 热度 87</span></span></li>
+          <li><span class="no">5</span><span><span class="n">亚特兰大 3:2 博洛尼亚</span><span class="s">意甲 · 热度 85</span></span></li>
+          <li><span class="no">6</span><span><span class="n">日职乙升级区拉锯</span><span class="s">专题 · 热度 83</span></span></li>
+          <li><span class="no">7</span><span><span class="n">弗赖堡 vs 法兰克福</span><span class="s">德甲 · 热度 82</span></span></li>
+        </ol>
+      </div>
+      <div class="panel panel-pad">
+        <div class="side-title">更新流</div>
+        <ul class="feed">
+          <li><span class="t">西甲第 13 轮积分榜同步</span><span class="d">今天 08:50</span></li>
+          <li><span class="t">K 联赛 2 首发名单待公布</span><span class="d">今天 19:00 预计</span></li>
+          <li><span class="t">英冠升级区赛后数据</span><span class="d">昨天 21:30</span></li>
+          <li><span class="t">马来超杯赛改期确认</span><span class="d">11 月 22 日</span></li>
+          <li><span class="t">里昂青年军观察补充</span><span class="d">11 月 21 日</span></li>
+          <li><span class="t">贝蒂斯定位球图解</span><span class="d">11 月 19 日</span></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-main">
+      <div>
+        <div class="foot-brand">
+          <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="#128a66"/>
+            <rect x="8" y="10" width="24" height="20" rx="2.5" fill="none" stroke="#e9faf3" stroke-width="1.6"/>
+            <line x1="20" y1="10" x2="20" y2="30" stroke="#e9faf3" stroke-width="1.6"/>
+            <circle cx="20" cy="20" r="4.2" fill="none" stroke="#e9faf3" stroke-width="1.6"/>
+          </svg>
+          <strong>欧洲一级亚洲二级在线观</strong>
+        </div>
+        <p class="foot-desc">把欧洲一级联赛与亚洲二级联赛的赛程、回放与判断依据整理在同一处，服务周末与深夜看球的球迷。</p>
+      </div>
+      <div>
+        <h4>赛线频道</h4>
+        <a href="/#pick">西甲与英超精选</a>
+        <a href="/#pick">意甲与德甲场次</a>
+        <a href="/#pick">法甲青年观察</a>
+        <a href="/#pick">日职乙升级区</a>
+        <a href="/#pick">K 联赛 2 附加赛</a>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <a href="/#updates">最新更新与赛果</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观赛指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#timeline">赛程时间线</a>
+      </div>
+      <div>
+        <h4>社区与资讯</h4>
+        <a href="/#comments">球迷评论</a>
+        <a href="/#news">赛事资讯</a>
+        <a href="/#related">延伸方向</a>
+        <a href="/#overview">赛线概览</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p><b>数据说明：</b>页面内赛程、比分、热度与评分为示例内容，用于展示条目结构，不构成任何预测或投注建议。赛事时间与首发信息以实际转播方公布为准。</p>
+      <p>© 2026 欧洲一级亚洲二级在线观 · 内容整理与页面展示，转载注明来源。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 移动端频道菜单
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 分类筛选
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#pickCards .card'));
+  var btns=Array.prototype.slice.call(document.querySelectorAll('.cat-btn'));
+  var note=document.getElementById('filterNote');
+  var empty=document.getElementById('pickEmpty');
+
+  function applyFilter(cat){
+    var shown=0;
+    cards.forEach(function(c){
+      var tags=c.getAttribute('data-tags')||'';
+      var ok=(cat==='all')||tags.indexOf(cat)>-1;
+      c.classList.toggle('hidden',!ok);
+      if(ok)shown++;
+    });
+    if(note){
+      note.innerHTML=cat==='all'
+        ? '当前显示 <b>'+shown+'</b> 条精选赛事条目。'
+        : '分类「'+cat+'」下共 <b>'+shown+'</b> 条精选赛事条目。';
+    }
+    if(empty)empty.classList.toggle('hidden',shown!==0);
+  }
+
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+      applyFilter(b.getAttribute('data-cat'));
+    });
+  });
+
+  // 本地搜索
+  var q=document.getElementById('q');
+  var qBtn=document.getElementById('qBtn');
+  function doSearch(){
+    var kw=(q&&q.value||'').trim().toLowerCase();
+    if(!kw){applyFilter('all');return;}
+    var shown=0;
+    cards.forEach(function(c){
+      var txt=(c.textContent||'').toLowerCase();
+      var ok=txt.indexOf(kw)>-1;
+      c.classList.toggle('hidden',!ok);
+      if(ok)shown++;
+    });
+    if(note)note.innerHTML='关键词「'+kw+'」匹配 <b>'+shown+'</b> 条精选赛事条目。';
+    if(empty)empty.classList.toggle('hidden',shown!==0);
+    if(shown>0){
+      var el=document.getElementById('pick');
+      if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+  }
+  if(qBtn)qBtn.addEventListener('click',doSearch);
+  if(q)q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});
+})();
+</script>
+</body>
+                </html>
